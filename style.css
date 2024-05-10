@@ -1,9 +1,9 @@
 :root{
-  --cor-de-fundo:#723E4E;
-  --cor-texto:#F4B036;
-  --botao-ativo:#33ef5c;
-  --botao-inativo:#38a2b0;
-  --texto-simples:#FFFFFF;
+  --cor-de-fundo:#ffffff;
+  --cor-texto:#000000;
+  --botao-ativo:#df6d2c;
+  --botao-inativo:#ff5100;
+  --texto-simples:#000000;
 
 
 }
@@ -42,7 +42,41 @@ background-color: var(--botao-ativo);
 border-bottom: 4px solid var(--cor-texto);
 }
 
+.conteudo-principal{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+}
 
+.abas-textos{
+background-color: var(--cor-de-fundo);
+padding: 40px;
+border-radius: 40px 40px 40px 40px;
+font-family: "Shadows Into Light", cursive;
+}
+
+.aba-conteudo.ativo{
+display: block;
+}
+
+.aba-conteudo{
+display: none;
+}
+
+.aba-conteudo-titulo-principal{
+font-size: 28px;
+text-align: center;
+}
+
+.aba-conteudo-titulo-secundario{
+text-align: center;
+color: var(--cor-texto);
+text-transform: uppercase;
+}
 
 @media screen and (min-width: 768px){
 .botoes{
@@ -66,7 +100,7 @@ font-weight: 400;
 font-style: normal;
   background-image: linear-gradient(
   -225deg,
-  #ff595e 0%,
+  #ff0008 0%,
   #ffca3a 29%,
   #8ac926 67%,
   #1982c4 88%,
@@ -78,7 +112,6 @@ background-clip: border-box;
 background-size: 200% auto;
 color: #fff;
 background-clip: text;
-text-fill-color: transparent;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 animation: textclip 1s linear infinite;
@@ -90,40 +123,4 @@ display: inline-block;
 to {
   background-position: 200% center;
 }
-}
-
-
-.conteudo-principal{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.abas-textos{
-background-color: var(--cor-de-fundo);
-padding: 40px;
-border-radius: 0 0 40px 40px;
-}
-
-.aba-conteudo-ativo{
-display: block;
-}
-
-.aba-conteudo{
-display: none;
-}
-
-.aba-conteudo-titulo-principal{
-font-size: 28px;
-text-align: center;
-}
-
-.aba-conteudo-titulo-secundario{
-text-align: center;
-color: var(--cor-texto);
-text-transform: uppercase;
 }
